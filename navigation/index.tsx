@@ -44,6 +44,7 @@ function RootNavigator() {
           backgroundColor: Color.light.tint,
           shadowOpacity:0,
           elevation:0
+          
         },
         headerTintColor: Color.light.background,
         headerTitleAlign: "left",
