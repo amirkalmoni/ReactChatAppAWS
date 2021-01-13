@@ -10,14 +10,37 @@ export type MainTabParamList = {
   Calls: undefined;
 };
 
-export type TabOneParamList = {
+export type CameraParamList = {
   TabOneScreen: undefined;
 };
 
-export type TabTwoParamList = {
+export type ChatsParamList = {
   TabTwoScreen: undefined;
 };
 
-export type TabThreeParamList = {
+export type StatusParamList = {
   TabThreeScreen: undefined;
 };
+
+export type CallsParamList = {
+  TabThreeScreen: undefined;
+};
+
+export type User={
+  id: String;
+  name: String;
+  imgUri: String;
+}
+
+
+export type Message={
+  id: String;
+  content: String;
+  createdAt: number;
+}
+
+export type ChatRoom={
+  id: string;
+  users: [User];
+  lastMessage: Message;
+}
