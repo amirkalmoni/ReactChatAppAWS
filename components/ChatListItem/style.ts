@@ -6,7 +6,7 @@ const style = StyleSheet.create({
         flexDirection: 'row',
         width:"100%",
         justifyContent: "space-between",
-        padding: 10
+        padding: 10,
     },
 
     leftContainer: {
@@ -27,7 +27,7 @@ const style = StyleSheet.create({
         color: 'grey'
     },
     time:{
-        fontSize: 16,
+        fontSize: 14,
         color: 'grey'
     },
 
