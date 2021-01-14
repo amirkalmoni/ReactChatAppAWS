@@ -14,6 +14,7 @@ import { RootStackParamList } from "../types";
 import MainTabNavigator from "./MainTabNavigator";
 import LinkingConfiguration from "./LinkingConfiguration";
 import { Octicons, MaterialCommunityIcons } from "@expo/vector-icons";
+import ChatRoomScreen from "../screens/ChatRoomScreen";
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
@@ -42,9 +43,8 @@ function RootNavigator() {
       screenOptions={{
         headerStyle: {
           backgroundColor: Color.light.tint,
-          shadowOpacity:0,
-          elevation:0
-          
+          shadowOpacity: 0,
+          elevation: 0,
         },
         headerTintColor: Color.light.background,
         headerTitleAlign: "left",
@@ -64,18 +64,24 @@ function RootNavigator() {
                 flexDirection: "row",
                 width: 60,
                 justifyContent: "space-between",
-                marginRight: 10
+                marginRight: 10,
               }}
             >
               <Octicons name="search" size={21} color={"white"} />
               <MaterialCommunityIcons
                 name="dots-vertical"
-                size={21 }
+                size={21}
                 color={"white"}
               />
             </View>
           ),
         }}
+      />
+
+      <Stack.Screen
+        name="ChatRoom"
+        component={ChatRoomScreen}
+        options={{ title: "ChatRoom" }}
       />
       <Stack.Screen
         name="NotFound"

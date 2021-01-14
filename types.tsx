@@ -26,21 +26,20 @@ export type CallsParamList = {
   TabThreeScreen: undefined;
 };
 
-export type User={
+export type User = {
   id: String;
   name: String;
   imgUri: String;
-}
+};
 
-
-export type Message={
+export type Message = {
   id: String;
   content: String;
   createdAt: number;
-}
+};
 
-export type ChatRoom={
+export type ChatRoom = {
   id: string;
   users: [User];
   lastMessage: Message;
-}
+};
