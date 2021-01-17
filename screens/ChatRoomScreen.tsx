@@ -1,8 +1,11 @@
 import React from "react";
 import { Text } from "../components/Themed";
+import { useRoute } from "@react-navigation/native";
 
 const ChatRoomScreen = () => {
-  return <Text>bbh</Text>;
+  const route = useRoute();
+  console.log(route.params);
+  return <Text> bhm </Text>;
 };
 
 export default ChatRoomScreen;

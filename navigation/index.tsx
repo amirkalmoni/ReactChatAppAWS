@@ -5,7 +5,7 @@ import {
 } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import * as React from "react";
-import { ColorSchemeName, View } from "react-native";
+import { ColorSchemeName, View, Image } from "react-native";
 import { Colors, Header } from "react-native/Libraries/NewAppScreen";
 
 import Color from "../constants/Colors";
@@ -13,7 +13,13 @@ import NotFoundScreen from "../screens/NotFoundScreen";
 import { RootStackParamList } from "../types";
 import MainTabNavigator from "./MainTabNavigator";
 import LinkingConfiguration from "./LinkingConfiguration";
-import { Octicons, MaterialCommunityIcons } from "@expo/vector-icons";
+import {
+  Octicons,
+  MaterialCommunityIcons,
+  MaterialIcons,
+  FontAwesome,
+  FontAwesome5,
+} from "@expo/vector-icons";
 import ChatRoomScreen from "../screens/ChatRoomScreen";
 
 // If you are not familiar with React Navigation, we recommend going through the
@@ -36,6 +42,15 @@ export default function Navigation({
 // A root stack navigator is often used for displaying modals on top of all other content
 // Read more here: https://reactnavigation.org/docs/modal
 const Stack = createStackNavigator<RootStackParamList>();
+
+function LogoTitle() {
+  return (
+    <Image
+      style={{ width: 50, height: 50 }}
+      source={require("@expo/snack-static/react-native-logo.png")}
+    />
+  );
+}
 
 function RootNavigator() {
   return (
@@ -81,7 +96,27 @@ function RootNavigator() {
       <Stack.Screen
         name="ChatRoom"
         component={ChatRoomScreen}
-        options={{ title: "ChatRoom" }}
+        options={({ route }) => ({
+          title: route.params.name,
+
+          headerRight: () => (
+            <View
+              style={{
+                flexDirection: "row",
+                justifyContent: "space-between",
+                width: 100,
+              }}
+            >
+              <MaterialIcons name="call" size={21} color="white" />
+              <FontAwesome5 name="video" size={21} color="white" />
+              <MaterialCommunityIcons
+                name="dots-vertical"
+                size={21}
+                color="white"
+              />
+            </View>
+          ),
+        })}
       />
       <Stack.Screen
         name="NotFound"
