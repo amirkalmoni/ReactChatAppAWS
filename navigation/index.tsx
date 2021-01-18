@@ -43,14 +43,14 @@ export default function Navigation({
 // Read more here: https://reactnavigation.org/docs/modal
 const Stack = createStackNavigator<RootStackParamList>();
 
-function LogoTitle() {
-  return (
-    <Image
-      style={{ width: 50, height: 50 }}
-      source={require("@expo/snack-static/react-native-logo.png")}
-    />
-  );
-}
+// function LogoTitle() {
+//   return (
+//     <Image
+//       style={{ width: 50, height: 50 }}
+//       source={require("@expo/snack-static/react-native-logo.png")}
+//     />
+//   );
+// }
 
 function RootNavigator() {
   return (
