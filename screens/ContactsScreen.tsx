@@ -3,21 +3,21 @@ import { StyleSheet } from "react-native";
 
 import EditScreenInfo from "../components/EditScreenInfo";
 import { Text, View } from "../components/Themed";
-import ChatListItem from "../components/ChatListItem";
-import chatRooms from "../data/ChatRooms";
+import users from "../data/Users";
 import { FlatList } from "react-native-gesture-handler";
 import NewMessageButton from "../components/NewMessageButton";
+import ContactsListItem from "../components/ContactsListItem";
 
-export default function ChatScreen() {
+export default function ContactsScreen() {
   return (
     <View style={styles.container}>
       <FlatList
         style={{ width: "100%" }}
-        data={chatRooms}
-        renderItem={({ item }) => <ChatListItem chatRoom={item} />}
+        data={users}
+        renderItem={({ item }) => <ContactsListItem user={item} />}
         keyExtractor={(item) => item.id}
       />
-      <NewMessageButton />
+      
     </View>
   );
 }
