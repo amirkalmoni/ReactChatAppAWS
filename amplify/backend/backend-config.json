@@ -1,1 +1,10 @@
-{}
+{
+  "auth": {
+    "chatappbb2336af": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
