@@ -22,7 +22,7 @@ const ContactsListItem = (props: ContactsListItemProps) => {
     <TouchableWithoutFeedback onPress={onClick}>
       <View style={styles.container}>
         <View style={styles.leftContainer}>
-          <Image source={{ uri: user.imageUri }} style={styles.avatar} />
+          <Image source={{ uri: user.imageURI }} style={styles.avatar} />
           <View style={styles.midContainer}>
             <Text style={styles.username}>{user.name}</Text>
             <Text style={styles.status}>
