@@ -47,14 +47,14 @@ function App() {
         console.log(userData);
         if (userData.data.getUser) {
           console.log("user already registered in database");
-        } else {
-          console.log("new user is being created")
+        } 
+        else {
           // object of a new user to be created
+          console.log("a new user has been created");
           const newUser = {
             id: userInfo.attributes.sub,
             name: userInfo.username,
-            imageURI:
-              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shataghana.com%2Fshatta-wale-gave-strong-warning-to-his-fans%2Fsm4lyf%2F&psig=AOvVaw03OYvzcJv6YBNrnRwtGak7&ust=1611436399132000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCND_hsO6sO4CFQAAAAAdAAAAABAI",
+            imageURI: getRandomImage(),
             status: "Hey, I am using Whatsapp",
           };
           //if there is no user in the db with the user id, create one using GraphQL mutation
