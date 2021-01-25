@@ -31,7 +31,7 @@ export type CallsParamList = {
 export type User = {
   id: String;
   name: String;
-  imgUri: String;
+  imageURI: String;
   status: string;
 };
 
@@ -46,4 +46,8 @@ export type ChatRoom = {
   id: string;
   users: User[];
   lastMessage: Message;
+};
+
+export type newChatRoomData = {
+  data: string;
 };

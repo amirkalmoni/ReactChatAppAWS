@@ -18,13 +18,13 @@ export default function ContactsScreen() {
     const fetchUsers = async () => {
       try {
         const usersData = await API.graphql(graphqlOperation(listUsers));
-        console.log(usersData);
+        //console.log(usersData);
         setUsers(usersData.data.listUsers.items);
-      } catch {Error}
-      console.error(Error);
+      } catch {}
+      
       
     };
-    fetchUsers(e);
+    fetchUsers();
   }, []);
 
   return (

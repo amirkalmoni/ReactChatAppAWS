@@ -46,11 +46,11 @@ function App() {
         //get the user from the backend with the user id from auth
         console.log(userData);
         if (userData.data.getUser) {
-          console.log("user already registered in database");
+         // console.log("user already registered in database");
         } 
         else {
           // object of a new user to be created
-          console.log("a new user has been created");
+         // console.log("a new user has been created");
           const newUser = {
             id: userInfo.attributes.sub,
             name: userInfo.username,

@@ -7,7 +7,7 @@ export const onCreateUser = /* GraphQL */ `
     onCreateUser {
       id
       name
-      imageUri
+      imageURI
       status
       chatRoomUser {
         items {
@@ -29,7 +29,7 @@ export const onUpdateUser = /* GraphQL */ `
     onUpdateUser {
       id
       name
-      imageUri
+      imageURI
       status
       chatRoomUser {
         items {
@@ -51,7 +51,7 @@ export const onDeleteUser = /* GraphQL */ `
     onDeleteUser {
       id
       name
-      imageUri
+      imageURI
       status
       chatRoomUser {
         items {
@@ -77,7 +77,7 @@ export const onCreateChatRoomUser = /* GraphQL */ `
       user {
         id
         name
-        imageUri
+        imageURI
         status
         chatRoomUser {
           nextToken
@@ -107,7 +107,7 @@ export const onUpdateChatRoomUser = /* GraphQL */ `
       user {
         id
         name
-        imageUri
+        imageURI
         status
         chatRoomUser {
           nextToken
@@ -137,7 +137,7 @@ export const onDeleteChatRoomUser = /* GraphQL */ `
       user {
         id
         name
-        imageUri
+        imageURI
         status
         chatRoomUser {
           nextToken

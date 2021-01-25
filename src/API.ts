@@ -5,13 +5,13 @@
 export type CreateUserInput = {
   id?: string | null,
   name: string,
-  imageUri?: string | null,
+  imageURI?: string | null,
   status?: string | null,
 };
 
 export type ModelUserConditionInput = {
   name?: ModelStringInput | null,
-  imageUri?: ModelStringInput | null,
+  imageURI?: ModelStringInput | null,
   status?: ModelStringInput | null,
   and?: Array< ModelUserConditionInput | null > | null,
   or?: Array< ModelUserConditionInput | null > | null,
@@ -61,7 +61,7 @@ export type ModelSizeInput = {
 export type UpdateUserInput = {
   id: string,
   name?: string | null,
-  imageUri?: string | null,
+  imageURI?: string | null,
   status?: string | null,
 };
 
@@ -130,7 +130,7 @@ export type DeleteChatRoomInput = {
 export type ModelUserFilterInput = {
   id?: ModelIDInput | null,
   name?: ModelStringInput | null,
-  imageUri?: ModelStringInput | null,
+  imageURI?: ModelStringInput | null,
   status?: ModelStringInput | null,
   and?: Array< ModelUserFilterInput | null > | null,
   or?: Array< ModelUserFilterInput | null > | null,
@@ -163,7 +163,7 @@ export type CreateUserMutation = {
     __typename: "User",
     id: string,
     name: string,
-    imageUri: string | null,
+    imageURI: string | null,
     status: string | null,
     chatRoomUser:  {
       __typename: "ModelChatRoomUserConnection",
@@ -192,7 +192,7 @@ export type UpdateUserMutation = {
     __typename: "User",
     id: string,
     name: string,
-    imageUri: string | null,
+    imageURI: string | null,
     status: string | null,
     chatRoomUser:  {
       __typename: "ModelChatRoomUserConnection",
@@ -221,7 +221,7 @@ export type DeleteUserMutation = {
     __typename: "User",
     id: string,
     name: string,
-    imageUri: string | null,
+    imageURI: string | null,
     status: string | null,
     chatRoomUser:  {
       __typename: "ModelChatRoomUserConnection",
@@ -255,7 +255,7 @@ export type CreateChatRoomUserMutation = {
       __typename: "User",
       id: string,
       name: string,
-      imageUri: string | null,
+      imageURI: string | null,
       status: string | null,
       chatRoomUser:  {
         __typename: "ModelChatRoomUserConnection",
@@ -294,7 +294,7 @@ export type UpdateChatRoomUserMutation = {
       __typename: "User",
       id: string,
       name: string,
-      imageUri: string | null,
+      imageURI: string | null,
       status: string | null,
       chatRoomUser:  {
         __typename: "ModelChatRoomUserConnection",
@@ -333,7 +333,7 @@ export type DeleteChatRoomUserMutation = {
       __typename: "User",
       id: string,
       name: string,
-      imageUri: string | null,
+      imageURI: string | null,
       status: string | null,
       chatRoomUser:  {
         __typename: "ModelChatRoomUserConnection",
@@ -444,7 +444,7 @@ export type GetUserQuery = {
     __typename: "User",
     id: string,
     name: string,
-    imageUri: string | null,
+    imageURI: string | null,
     status: string | null,
     chatRoomUser:  {
       __typename: "ModelChatRoomUserConnection",
@@ -476,7 +476,7 @@ export type ListUsersQuery = {
       __typename: "User",
       id: string,
       name: string,
-      imageUri: string | null,
+      imageURI: string | null,
       status: string | null,
       chatRoomUser:  {
         __typename: "ModelChatRoomUserConnection",
@@ -503,7 +503,7 @@ export type GetChatRoomUserQuery = {
       __typename: "User",
       id: string,
       name: string,
-      imageUri: string | null,
+      imageURI: string | null,
       status: string | null,
       chatRoomUser:  {
         __typename: "ModelChatRoomUserConnection",
@@ -545,7 +545,7 @@ export type ListChatRoomUsersQuery = {
         __typename: "User",
         id: string,
         name: string,
-        imageUri: string | null,
+        imageURI: string | null,
         status: string | null,
         createdAt: string,
         updatedAt: string,
@@ -616,7 +616,7 @@ export type OnCreateUserSubscription = {
     __typename: "User",
     id: string,
     name: string,
-    imageUri: string | null,
+    imageURI: string | null,
     status: string | null,
     chatRoomUser:  {
       __typename: "ModelChatRoomUserConnection",
@@ -640,7 +640,7 @@ export type OnUpdateUserSubscription = {
     __typename: "User",
     id: string,
     name: string,
-    imageUri: string | null,
+    imageURI: string | null,
     status: string | null,
     chatRoomUser:  {
       __typename: "ModelChatRoomUserConnection",
@@ -664,7 +664,7 @@ export type OnDeleteUserSubscription = {
     __typename: "User",
     id: string,
     name: string,
-    imageUri: string | null,
+    imageURI: string | null,
     status: string | null,
     chatRoomUser:  {
       __typename: "ModelChatRoomUserConnection",
@@ -693,7 +693,7 @@ export type OnCreateChatRoomUserSubscription = {
       __typename: "User",
       id: string,
       name: string,
-      imageUri: string | null,
+      imageURI: string | null,
       status: string | null,
       chatRoomUser:  {
         __typename: "ModelChatRoomUserConnection",
@@ -727,7 +727,7 @@ export type OnUpdateChatRoomUserSubscription = {
       __typename: "User",
       id: string,
       name: string,
-      imageUri: string | null,
+      imageURI: string | null,
       status: string | null,
       chatRoomUser:  {
         __typename: "ModelChatRoomUserConnection",
@@ -761,7 +761,7 @@ export type OnDeleteChatRoomUserSubscription = {
       __typename: "User",
       id: string,
       name: string,
-      imageUri: string | null,
+      imageURI: string | null,
       status: string | null,
       chatRoomUser:  {
         __typename: "ModelChatRoomUserConnection",

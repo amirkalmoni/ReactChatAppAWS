@@ -7,7 +7,7 @@ export const getUser = /* GraphQL */ `
     getUser(id: $id) {
       id
       name
-      imageUri
+      imageURI
       status
       chatRoomUser {
         items {
@@ -34,7 +34,7 @@ export const listUsers = /* GraphQL */ `
       items {
         id
         name
-        imageUri
+        imageURI
         status
         chatRoomUser {
           nextToken
@@ -55,7 +55,7 @@ export const getChatRoomUser = /* GraphQL */ `
       user {
         id
         name
-        imageUri
+        imageURI
         status
         chatRoomUser {
           nextToken
@@ -90,7 +90,7 @@ export const listChatRoomUsers = /* GraphQL */ `
         user {
           id
           name
-          imageUri
+          imageURI
           status
           createdAt
           updatedAt
