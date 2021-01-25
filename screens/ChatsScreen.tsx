@@ -9,6 +9,8 @@ import { FlatList } from "react-native-gesture-handler";
 import NewMessageButton from "../components/NewMessageButton";
 
 export default function ChatScreen() {
+
+
   return (
     <View style={styles.container}>
       <FlatList

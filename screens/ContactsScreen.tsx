@@ -24,7 +24,7 @@ export default function ContactsScreen() {
       console.error(Error);
       
     };
-    fetchUsers();
+    fetchUsers(e);
   }, []);
 
   return (
